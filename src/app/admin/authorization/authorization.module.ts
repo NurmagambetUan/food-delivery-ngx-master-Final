@@ -6,6 +6,7 @@ import { AuthorizationComponent } from './authorization.component';
 import { LoginComponent } from './login/login.component';
 
 
+
 @NgModule({
   declarations: [AuthorizationComponent, LoginComponent],
   imports: [

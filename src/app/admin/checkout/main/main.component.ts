@@ -114,7 +114,7 @@ export class MainComponent implements OnInit {
             status: 1,
           };
           this.orderService.save(order).subscribe( perf => {
-            this.toastrService.success('Payment successful');
+            this.toastrService.success('Payment successful ');
             const stripeObject = {
               token: result.token.id,
               amount: this.totalPriceWithDelivery,
@@ -123,12 +123,12 @@ export class MainComponent implements OnInit {
             this.orderService.paymentCharge(stripeObject).subscribe( data => {
               console.log(data);
             });
-            this.router.navigate(['/checkout/success'], {state: {
+            this.router.navigate(['/checkout/success '], {state: {
               user: this.user,
               totalPrice: this.totalPriceWithDelivery,
               }});
           }, error => {
-            this.router.navigate(['/checkout/failure']);
+            this.router.navigate(['/checkout/failure ']);
             console.log(error);
           });
           console.log(result);

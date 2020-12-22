@@ -2,7 +2,7 @@
 
 @include nb-install-component() {
   ::ng-deep router-outlet + * {
-    display: block;
+    //display: block;
     animation: fade 1s;
 
     @keyframes fade {
