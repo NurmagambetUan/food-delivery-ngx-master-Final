@@ -12,7 +12,8 @@ export class CategoryService {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer ' + localStorage.getItem(environment.apiToken),
   });
-  fullUrl = environment.apiUrl + '/api/categories';
+    fullUrl = environment.apiUrl + '/api/categories';
+
 
   constructor(private http: HttpClient) {
   }

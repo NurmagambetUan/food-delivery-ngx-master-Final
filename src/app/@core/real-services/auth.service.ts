@@ -27,7 +27,6 @@ export class AuthService {
               private toastrService: NbToastrService,
               private sendUserService: SendUserService,
   ) {
-
   }
 
   authorize = (perf) => {
